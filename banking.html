@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve Bank Of Bangladesh</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="bank-reseve-container max-w-7xl m-auto">
+        <h1 class="text-center text-5xl mt-11">Let's Get Some <span class="text-pink-500">Money</span></h1>
+        <div class="bank-content grid  grid-cols-3 gap-4 mt-12 ">
+            <div class="deposit bg-blue-500 p-12 rounded ">
+                <h2 class="text-3xl  mb-2 text-black">Deposit</h2>
+                <h3 class="text-4xl text-white">$<span id="deposit-total">000</span></h3>
+            </div>
+            <div class="deposit bg-purple-500 p-12 rounded ">
+                <h2 class="text-3xl mb-2 text-black">Withdraw</h2>
+                <h3 class="text-4xl text-white">$ <span id="withdraw-value">000</span></h3>
+            </div>
+            <div class="deposit bg-red-500 p-12 rounded ">
+                <h2 class="text-3xl mb-2 text-black">Balance</h2>
+                <h3 class="text-4xl text-white">$ <span id="total-balance">1240</span></h3>
+            </div>
+        </div>
+    </section>
+    <section class="bank-form max-w-7xl m-auto">
+        <div class="bank-account-cont grid  grid-cols-2 gap-4 mt-20">
+            <div class="please-deposit bg-yellow-500 p-10 rounded">
+                <h2 class="text-3xl mb-2">Please Deposit</h2>
+                <input id="deposit-input" class="p-1 rounded border-2 w-9/12" type="text" placeholder="$ Amount you want to deposit">
+                <button id="deposit-button" class="bg-green-500 hover:bg-red-700 py-2 px-2 rounded text-white mt-4 font-bold block">Deposit</button>
+            </div>
+            <div class="please-deposit bg-purple-500 p-10 rounded">
+                <h2 class="text-3xl mb-2">Please Withdraw</h2>
+                <input id="withdraw-input" class="p-1 rounded border-2 w-9/12" type="text" placeholder="$ Amount you want to deposit">
+                <button id="withdraw-button" class="bg-green-500 hover:bg-red-700 py-2 px-2 rounded text-white mt-4 font-bold block">Withdraw</button>
+            </div>
+        </div>
+    </section>
+    <script src="banking.js"></script>
+</body>
+
+</html>
