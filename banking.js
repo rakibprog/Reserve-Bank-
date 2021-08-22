@@ -1,3 +1,17 @@
+// bank admin 
+document.getElementById('bank-btn').addEventListener('click', function() {
+    // get user email
+    const emailField = document.getElementById('email-field');
+    const emailUser = emailField.value;
+    // get  user password 
+    const passwordField = document.getElementById('pass-field');
+    const passUser = passwordField.value;
+    //check email user and pass
+    if (emailUser == "rocky@gmail.com" && passUser == 'pass') {
+        location.href = 'banking.html';
+    }
+});
+
 // get input value 
 function getInputValue(id) {
     const inputValue = document.getElementById(id);
@@ -5,7 +19,6 @@ function getInputValue(id) {
     const totalValue = parseFloat(inputNumber);
     inputValue.value = '';
     return totalValue;
-
 }
 
 //set input Value 
@@ -59,3 +72,5 @@ document.getElementById('withdraw-button').addEventListener('click', function() 
     }
 
 });
+
+//
